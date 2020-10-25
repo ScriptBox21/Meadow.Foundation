@@ -28,6 +28,8 @@ stages:
             displayName: Use_Nugets
             inputs:
               feedsToUse: "select"
+              nuGetFeedType: 'internal'
+              publishVstsFeed: $(internalFeedName)
               restoreSolution: "$(solution)"
           - task: VSBuild@1
             inputs:
