@@ -29,7 +29,7 @@ stages:
             inputs:
               feedsToUse: "select"
               nuGetFeedType: 'internal'
-              publishVstsFeed: $(internalFeedName)
+              vstsFeed: $(internalFeedName)
               restoreSolution: "$(solution)"
           - task: VSBuild@1
             inputs:
